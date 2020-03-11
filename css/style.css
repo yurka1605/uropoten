@@ -27,11 +27,12 @@ body {
 }
 
 /* HEADER */
+.effective,
 footer .banner,
 header {
     background-color: #e0eff3;
     background-image: url(../assets/bg.png);
-    background-position: center;
+    background-position: top center;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -210,6 +211,7 @@ nav {
     font-size: 18px;
     color: #404040;   
 }
+.important button,
 .banner__form button {
     background-color: #e30514;
     height: 40px;
@@ -363,31 +365,10 @@ nav {
     position: relative;
     padding: 25px 0;
     z-index: 3;
-    background: transparent;
-}
-.important__wrap::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #271f5b;
-    z-index: -1;
-}
-.important__wrap::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
     background-image: url(../assets/blue-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    opacity: 0.3;
-    z-index: 0;
 }
 .important__title {
     font-size: 30px;
@@ -406,7 +387,167 @@ nav {
     font-size: 30px;
     font-weight: 900;
 }
+.important button {
+    font-weight: 600;
+}
 /* END:important */
+
+/* illness */
+.illness {
+    padding: 45px 0 70px 0;
+}
+.illness__title {
+    font-weight: 300;
+    font-size: 50px;
+    text-align: center;
+}
+.illness__title span {
+    background-color: #e30514;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 5px 7px;
+}
+.illness__cards {
+    padding-top: 50px;
+}
+.illness__card {
+    text-align: center;
+}
+.illness__card img {
+    border-radius: 8px;
+    box-shadow: 4px 5px 10px -2px rgba(188,188,188,1);
+    margin-bottom: 30px;
+}
+.illness__card_info h3 {
+    font-size: 36px;
+    color: #e30514;
+}
+.illness__card_info p {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+/* END:illness */
+
+/* effective */
+.effective {
+    padding: 60px 0 30px 0;
+}
+.effective__title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+}
+.effective__title span {
+    font-weight: 500;
+    color: #ffffff;
+    padding: 5px 7px;
+    background-color: #e30514;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.effective__product {
+    width: 100%;
+    height: auto;
+}
+.effective__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.effective__item {
+    display: flex;
+    align-items: center;
+    width: calc(50% - 15px);
+    margin-bottom: 50px;
+}
+.effective__item:nth-child(3),
+.effective__item:nth-child(4) {
+    margin-bottom: 0;
+}
+.effective__item img {
+    width: 130px;
+    height: 135px;
+    margin-right: 15px;
+    border-radius: 8px;
+    box-shadow: 4px 5px 10px -2px rgba(188,188,188,1);
+}
+.effective__item_info h3 {
+    font-size: 36px;
+    color: #e30514;
+    margin-bottom: 0;
+}
+.effective__item_info p {
+    margin-bottom: 0;
+}
+/* END:effective */
+
+/* percent */
+.percent {
+    padding: 80px 0 60px 0;
+    background-image: url(../assets/percent/bg.png);
+    background-position: top right;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.percent__title {
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.percent__title span {
+    font-weight: 600;
+    color: #e30514;
+}
+.percent__list_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.percent__list_item:nth-child(4) {
+    margin-bottom: 0;
+}
+.percent__list_item img {
+    width: auto;
+    height: 40px;
+    margin-right: 20px;
+}
+.percent__list_text {
+    margin-bottom: 0;
+    font-size: 25px;
+}
+.percent__list_text span {
+    font-weight: 600;
+    color: #2a225d;
+}
+.percent__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.percent__button_text {
+    font-size: 20px;
+}
+.percent__button_text span {
+    color: #e30514;
+    font-weight: 900;
+    font-size: 32px;
+}
+.percent__bottom button {
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    background-color: #e30514;
+    border-radius: 8px;
+    border: 1px solid #e30514;
+    color: #ffffff;
+    padding: 15px 0;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+/* END:percent */
 
 /* footer */
 .footer__banner_title {
