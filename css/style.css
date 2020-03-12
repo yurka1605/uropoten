@@ -1,5 +1,4 @@
 @import '../css/bootstrap.min.css';
-@import '../css/jquery-ui.css';
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700,800,900&display=swap&subset=cyrillic');
 
 * {
@@ -1388,10 +1387,11 @@ nav {
         margin-left: 0;
     }
     .danger__product {
+        margin: 0 auto;
         position: relative;
         margin-top: -100px;
         margin-bottom: 30px;
-        transform: translateX(50%);
+        display: block;
     }
     .manufacturer {
         padding-bottom: 105px;
@@ -1410,14 +1410,17 @@ nav {
         overflow-x: hidden;
     }
     .sert {
-        transform: translateX(50%); 
+    margin: 0 auto;
+    display: block;
     }
     .clinic__right img {
         width: 290px;
         margin: 0 auto;
     }
     .way__product {
-        transform: translateX(50%); 
+    margin: 0 auto;
+    display: block;
+    position: relative;
     }
     .footer .banner__garant {
         margin-bottom: 50px;
