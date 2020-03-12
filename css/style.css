@@ -864,6 +864,8 @@ nav {
 }
 .reviews__item img {
     margin-right: 20px;
+    height: 175px;
+    width: 175px;
 }
 .reviews__item:nth-child(2) {
     background-color: #f9f9f9;
