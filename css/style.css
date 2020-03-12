@@ -167,13 +167,12 @@ nav {
     height: 100%;
     border-radius: 5px;
     background-image: url(../assets/repeat-bg.png);
-    /* background-size: 50% 70%; */
     z-index: -1;
     opacity: 0.2;
 }
 .banner__star {
     position: absolute;
-    top: -100%;
+    top: 0;
     left: 0;
     transform: translate(-50%, -50%);
 }
@@ -333,7 +332,7 @@ nav {
     border-radius: 4px;
     box-shadow: 4px 5px 10px -2px rgba(188,188,188,1);
     margin-bottom: 20px;
-    max-width: 100%;
+    max-width: 1;
 }
 .check-self__card_desc {
     text-align: center;   
@@ -970,6 +969,9 @@ nav {
     color: rgba(64, 64, 64, 255);
 }
 /* END:footer */
+.manufaturer__card-m,
+.tablets-m,
+.percent__product__m,
 .header .banner__title {
     display: none;
 }
@@ -1060,7 +1062,7 @@ nav {
     .banner__right .banner__title {
         display: none;
     }
-    .banner__star {z-index: 1;}
+    .banner__star {z-index: 1;max-width: 30%;transform: translate(0, -250%) rotate(-45deg);}
     .banner__form {
         margin-top: 0;
     }
@@ -1080,8 +1082,342 @@ nav {
         transform: translateX(15%);
     }
     .banner__people {margin-left: 0%;max-height: 100%;transform: translateX(-20%);}
+    .banner__form_time {
+        text-align: center;
+    }
+    .banner__form_title {
+        font-size: 24px;
+    }
+    .banner__form_subtitle {
+        font-size: 18px;
+        font-weight: 600;
+    }
     .nav__item:not(.nav__logo) {
         display: none;
+    }
+    .step {
+        margin-bottom: 25px;
+        max-width: 100%;
+    }
+    .steps {
+        padding-bottom: 0;
+    }
+    .check-self {
+        padding-top: 25px;
+    }
+    .check-self__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .important {
+        overflow: auto;
+    }
+    .important img {
+        max-width: 100%;
+        width: 375px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        z-index: 3;
+    }
+    .important__price,
+    .important__text,
+    .important__title {
+        text-align: center;
+    }
+    .important__text {
+        margin-bottom: 30px;
+    }
+    .important__price {
+        margin-bottom: 30px;
+    }
+    .illness {
+        padding-bottom: 0;
+    }
+    .illness__title {
+        font-size: 36px;
+    }
+    .illness__card {
+        margin-bottom: 40px;
+    }
+    .effective__title {
+        font-size: 26px;
+    }
+    .effective__item {
+        width: 100%;
+    }
+    .effective__item {
+        margin-top: 30px;
+        margin-bottom: 0;
+    }
+    .percent {
+        padding-top: 50px;
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+    .percent__title {
+        margin-bottom: 30px;
+        font-size: 26px;
+    }
+    .percent__list_item {
+        align-items: flex-start;
+    }
+    .percent__list_text {
+        line-height: 1.2;
+    }
+    .percent__marked {
+        position: absolute;
+        right: 0;
+        bottom: 80px;
+        z-index: -1;
+    }
+    .percent__bottom {
+        position: relative;
+        z-index: 2;
+        flex-direction: column;
+    }
+    .percent__product {
+        display: none;
+    }
+    .percent__product__m {
+        display: block;
+        margin-bottom: 50px;
+    }
+    .tablets__col-center {
+        display: none;
+    }
+    .tablets__card {
+        position: relative;
+        flex-direction: column;
+        max-height: fit-content;
+        margin-bottom: 30px!important;
+    }
+    .tablets__card:first-child {
+        align-items: flex-end;
+    }
+    .tablets__card:last-child {
+        align-items: flex-start;
+    }
+    .tablets__card:last-child .tablets__card_info h3,
+    .tablets__card:last-child .tablets__card_info p {
+        text-align: left;
+    }
+    .tablets__card:first-child .tablets__card_info h3,
+    .tablets__card:first-child .tablets__card_info p {
+        text-align: right;
+    }
+    .tablets__col:first-child .tablets__card,
+    .tablets__col:first-child .tablets__card {
+        flex-direction: column-reverse;
+    }
+    .tablets__card img {
+        margin: 0;
+        margin-bottom: 20px;
+        width: 137px;
+        height: 137px;
+    }
+    .tablets {
+        padding-bottom: 20px;
+    }
+    .tablets__card:first-child .tablets-m {
+        position: absolute;
+        top: 0;
+        right: 120px;
+        width: 164px;
+        height: 109px;
+        display: block;
+        box-shadow: none;
+        margin: 0;
+        transform: translateY(20%);
+    }
+    .tablets__card:last-child .tablets-m {
+        position: absolute;
+        top: 0;
+        left: 120px;
+        width: 164px;
+        height: 109px;
+        display: block;
+        box-shadow: none;
+        margin: 0;
+        transform: translateY(20%);
+    }
+    .way h2 {
+        margin-top: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .way__har {
+        flex-direction: column;
+    }
+    .way__caps {
+        justify-content: center;
+    }
+    .way__caps:last-child {
+        flex-direction: column;
+    }
+    .way__caps:last-child img {
+        margin-right: 0;
+        margin: 10px 0;
+    }
+    .way__caps p {
+        text-align: center;
+    }
+    .way__caps p span {
+        text-align: center;
+    }
+    .way__info {
+        flex-direction: column;
+    }
+    .way__info p {
+        font-size: 16px;
+        min-width: 100%;
+    }
+    .way__info button {
+        margin-top: 30px;
+        margin-left: 0;
+        width: 100%;
+    }
+    .expert__info > img {
+        height: 107px;
+        width: auto;
+    }
+    .expert__info {
+        align-self: flex-start;
+    }
+    .expert > p {
+        margin-top: 0;
+    }
+    .expert:first-child {
+        margin-bottom: 35px;
+    }
+    .clinic {
+        padding: 30px 0;
+    }
+    .clinic h2 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+    .clinic h2 span {
+        padding: 0px 5px;
+    }
+    .clinic__right {
+        margin-top: 30px;
+    }
+    .results {
+        padding: 40px 0;
+        background-size: contain;
+        background-repeat: repeat;
+    }
+    .results__header h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    .results__header img:first-child,
+    .results__header img {
+        height: 40px;
+        width: auto;
+    }
+    .results__header > .row {
+        justify-content: flex-end;
+    }
+    .results__table_item {
+        font-size: 14px;
+        padding-left: 10px;
+    }
+    .results__table_item > div {
+        padding: 0;
+    }
+    .reviews__item {
+        padding: 24px 12px;
+    }
+    .reviews h2 {
+        font-size: 30px;
+    }
+    .reviews h2 span {
+        padding: 2px 5px;
+    }
+    .reviews__item > img {
+        height: 83px;
+        width: auto;
+        margin-top: 85px;
+    }
+    .review {
+        flex-direction: column-reverse;
+    }
+    .review p:last-child {
+        font-size: 26px;
+        width: calc(100% + 100px);
+        margin-left: -103px;
+    }
+    .review img {
+        margin-left: -103px;
+    }
+    .review p span {
+        font-size: 28px;
+    }
+    .review img {
+        margin-right: 0;
+        height: 32px;
+        width: 123px;
+        margin-bottom: 5px;
+    }
+    .manufacturer h2 {
+        font-size: 30px;
+        text-align: center;
+    }
+    .manufacturer__img {
+        margin: 20px 0;
+    }
+    .manufacturer__icon {
+        width: calc(50% - 30px);
+        margin: 0 auto;
+    }
+    .manufaturer__card-m {
+        display: flex;
+    }
+    .manufaturer__card:first-child {
+        display: none;
+    }
+    .manufacturer__icons {
+        flex-wrap: wrap;
+    }
+    .manufaturer__cards {
+        margin-left: 0;
+    }
+    .danger__product {
+        position: relative;
+        margin-top: -100px;
+        margin-bottom: 30px;
+        transform: translateX(50%);
+    }
+    .manufacturer {
+        padding-bottom: 105px;
+    }
+    .danger h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+    .danger p {
+        font-size: 18px;
+    }
+    .danger button {
+        width: 100%;
+    }
+    .banner {
+        overflow-x: hidden;
+    }
+    .sert {
+        transform: translateX(50%); 
+    }
+    .clinic__right img {
+        width: 290px;
+        margin: 0 auto;
+    }
+    .way__product {
+        transform: translateX(50%); 
     }
     .footer .banner__garant {
         margin-bottom: 50px;
