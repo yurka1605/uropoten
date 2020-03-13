@@ -331,7 +331,7 @@ nav {
     border-radius: 4px;
     box-shadow: 4px 5px 10px -2px rgba(188,188,188,1);
     margin-bottom: 20px;
-    max-width: 1;
+    max-width: 100%;
 }
 .check-self__card_desc {
     text-align: center;   
@@ -389,6 +389,7 @@ nav {
 .important__price {
     font-size: 18px;
     line-height: 1;
+    white-space: nowrap;
 }
 .important__price span {
     font-size: 30px;
@@ -413,7 +414,7 @@ nav {
     color: #fff;
     font-weight: 500;
     border-radius: 4px;
-    padding: 5px 7px;
+    padding: 0px 7px;
 }
 .illness__cards {
     padding-top: 50px;
@@ -473,8 +474,8 @@ nav {
     margin-bottom: 0;
 }
 .effective__item img {
-    width: 130px;
-    height: 135px;
+    min-width: 130px;
+    min-height: 135px;
     margin-right: 15px;
     border-radius: 8px;
     box-shadow: 4px 5px 10px -2px rgba(188,188,188,1);
@@ -583,8 +584,8 @@ nav {
     margin-bottom: 0;
 }
 .tablets__card img {
-    height: 170px;
-    width: 168px;
+    min-height: 170px;
+    min-width: 168px;
     border-radius: 8px;
     box-shadow: 4px 5px 10px -2px rgba(188,188,188,1);
     margin: 0 25px;
@@ -616,7 +617,7 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 40px;
+    padding: 40px 0;
     color: #ffffff;
 }
 .way h2 {
@@ -878,8 +879,10 @@ nav {
 }
 .reviews__item img {
     margin-right: 20px;
-    height: 175px;
-    width: 175px;
+    min-height: 175px;
+    min-width: 175px;
+    max-height: 175px;
+    max-width: 175px;
 }
 .reviews__item:nth-child(2) {
     background-color: #f9f9f9;
@@ -894,8 +897,10 @@ nav {
     margin-bottom: 0;
 }
 .review img {
-    width: 190px;
-    height: auto;
+    min-width: 150px;
+    max-width: 150px;
+    min-height: 40px;
+    max-height: 40px;
 } 
 .review p span {
     color: #2a225d;
@@ -962,10 +967,15 @@ nav {
 }
 .footer__right {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 18px;
     color: rgba(64, 64, 64, 255);
+}
+.footer__right p:last-child {
+    margin-bottom: 0;
+    font-size: 14px;
 }
 /* END:footer */
 .manufaturer__card-m,
@@ -1030,6 +1040,7 @@ nav {
         display: block;
         text-align: center;
         font-size: 20px;
+        padding-top: 20px;
     }
     nav {
         flex-direction: column;
@@ -1114,6 +1125,7 @@ nav {
         overflow: auto;
     }
     .important img {
+        top: -10px;
         max-width: 100%;
         width: 375px;
         display: block;
@@ -1143,6 +1155,7 @@ nav {
     }
     .effective__title {
         font-size: 26px;
+        line-height: 1.5;
     }
     .effective__item {
         width: 100%;
@@ -1214,8 +1227,8 @@ nav {
     .tablets__card img {
         margin: 0;
         margin-bottom: 20px;
-        width: 137px;
-        height: 137px;
+        min-width: 137px;
+        min-height: 137px;
     }
     .tablets {
         padding-bottom: 20px;
@@ -1297,6 +1310,7 @@ nav {
     .clinic h2 {
         font-size: 30px;
         margin-bottom: 30px;
+        line-height: 1.5;
     }
     .clinic h2 span {
         padding: 0px 5px;
@@ -1334,13 +1348,18 @@ nav {
     }
     .reviews h2 {
         font-size: 30px;
+        line-height: 1.5;
     }
     .reviews h2 span {
         padding: 2px 5px;
     }
     .reviews__item > img {
+        min-height: 83px;
+        max-height: 83px;
+        min-width: 83px;
+        max-width: 83px;
         height: 83px;
-        width: auto;
+        width: 83px;
         margin-top: 85px;
     }
     .review {
@@ -1355,7 +1374,7 @@ nav {
         margin-left: -103px;
     }
     .review p span {
-        font-size: 28px;
+        font-size: 26px;
     }
     .review img {
         margin-right: 0;
@@ -1405,6 +1424,7 @@ nav {
     }
     .danger button {
         width: 100%;
+        white-space: nowrap;
     }
     .banner {
         overflow-x: hidden;
@@ -1434,5 +1454,27 @@ nav {
 
 }
 @media (max-width: 480px) {
-
+    .review p {
+        font-size: 16px;
+    }
+    .review p:last-child,
+    .review p span {
+        font-size: 20px;
+    }
+    .expert__info_text span {
+        font-size: 22px;
+        white-space: nowrap;
+    }
+    .expert p {
+        font-size: 16px;
+    }
+    .step__title {
+        font-size: 36px;
+    }
+    .step__desc {
+        font-size: 14px;
+    }
+    .check-self__card img {
+        max-width: 100%;
+    }
 }
