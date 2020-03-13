@@ -9,7 +9,7 @@ $(document).ready(function() {
         }
         $.ajax({
             type: 'POST',
-            url: 'mail.php',
+            url: 'https://yurka1605.github.io/uropoten/mail.php',
             data: data
         }).done(() => {
             $(this).parent().children('.form__inputs').children('input[name="name"]').val('');
